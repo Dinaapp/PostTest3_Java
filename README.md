@@ -1,7 +1,7 @@
 Nama: Rizky wahyu dina putri
 NIM: 2409116111
 
-
+Program Top Up Game adalah program CRUD yang mengelola daftar game beserta item Top Up. Pengguna dapat melihat daftar Game, mencari, menambahkan game baru, mengubah, dan menghapus data. Program juga dibuat menggunakan MVC dengan pemisahan packages agar lebih terstruktur dan sesuai dengan fungsi.
 
 <img width="444" height="422" alt="image" src="https://github.com/user-attachments/assets/7c7c2788-350a-4bc7-894f-69cee535579e" />
 
