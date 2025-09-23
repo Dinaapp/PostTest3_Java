@@ -31,7 +31,7 @@ Method hapusGame digunakan untujk menghapus game berdasarkan id, jika data ditem
 
 Method cariGame mencari data berdasarkan kata kunci yaitu nama gamenya, pencarian game disetting dengan menggunakan toLowerCase().
 
-Method ini digunakan untuk menampilkan seluruuh data game beserta item top up. Jika list game kosong, maka menampilkan belum ada game tersedia.
+Method tampilkanDaftarGame digunakan untuk menampilkan seluruuh data game beserta item top up. Jika list game kosong, maka menampilkan belum ada game tersedia.
 
 <img width="514" height="308" alt="image" src="https://github.com/user-attachments/assets/96923096-8fe6-415a-b9f3-201cd7ce9cfe" />
 
