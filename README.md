@@ -1,7 +1,9 @@
-Nama: Rizky wahyu dina putri
+<img width="1102" height="502" alt="image" src="https://github.com/user-attachments/assets/5e115815-5aa6-4e40-aa01-b48a0cbeabc3" /><img width="1144" height="602" alt="image" src="https://github.com/user-attachments/assets/440593ec-3758-4008-96d9-0ad4d2af6694" />Nama: Rizky wahyu dina putri
 NIM: 2409116111
 
 <img width="444" height="422" alt="image" src="https://github.com/user-attachments/assets/7c7c2788-350a-4bc7-894f-69cee535579e" />
+
+Terdapat 3 Package pada program top up game, pada package model terdapat penambahan class yaitu user, admin, customer, dan transaksi. Class user adalah class induk atau superclass, admin dan customer adalah class anak atau subclass dari user. Sedangkan transaksi adalah kelas tambahan untuk menu yang dibuat untuk Customer. Jadi pada program top up gam, terdapat dua pov menu program.
 
 <img width="960" height="437" alt="image" src="https://github.com/user-attachments/assets/18e5e10f-a22f-48c2-b62b-d8ca1d2d8fc6" />
 
@@ -45,9 +47,9 @@ Method tampilkanDaftarGame digunakan untuk menampilkan seluruuh data game besert
 
 <img width="920" height="577" alt="image" src="https://github.com/user-attachments/assets/282d1890-5943-47e7-bc16-351234ddb069" />
 
-<img width="905" height="853" alt="image" src="https://github.com/user-attachments/assets/b6fe17ae-51c3-42f4-a406-63023abb5049" />
+<img width="1364" height="868" alt="image" src="https://github.com/user-attachments/assets/bef576ba-b640-4190-a656-35ea86721640" />
 
-<img width="917" height="296" alt="image" src="https://github.com/user-attachments/assets/455395f1-ffbf-49ab-b026-548c5f85f05a" />
+<img width="1102" height="502" alt="image" src="https://github.com/user-attachments/assets/2b2773f3-236d-4006-a964-3d3492d66b27" />
 
 Di sini ada tiga class utama, User, Admin, dan Customer. Pertama, class User dijadikan abstract karena sifatnya umum dan nantinya bakal diturunkan ke Admin dan Customer. Class ini punya atribut username, password, dan service (objek dari GameService). Di dalamnya ada constructor buat inisialisasi data, lalu ada getter untuk ambil username dan service. Karena abstract, dia juga punya method abstract tampilkanMenu() yang wajib menggunakan override di class anak.
 
@@ -58,6 +60,8 @@ Class Customer juga turunan dari user atau subclass nya, menu customer lebih sim
 method lihatRiwayat() di class Customer digunakan untuk menampilkan semua transaksi yang udah dilakukan customer. Jika masih kosong, muncul pesan "Belum ada transaksi". Kalau ada, setiap transaksi ditampilkan dengan struknya.
 
 <img width="1359" height="896" alt="image" src="https://github.com/user-attachments/assets/991f3f80-b217-4903-bd04-947c04d2aaec" />
+
+Class Transaksi digunakan untuk menyimpan dan menampilkan data transaksi top up game. Pada saat objek transaksi dibuat, atribut game, item, ID akun, dan metode pembayaran akan diisi sesuai data yang dimasukkan, sedangkan atribut waktu akan otomatis mengambil data waktu saat transaksi berlangsung dengan real time. class ini terdapat method tampilkanStruk() yang berfungsi untuk menampilkan struk transaksi.
 
 <img width="1057" height="617" alt="image" src="https://github.com/user-attachments/assets/63058ed6-661e-4e7f-8256-8136866641d7" />
 
@@ -71,10 +75,26 @@ method lihatRiwayat() di class Customer digunakan untuk menampilkan semua transa
 
 <img width="927" height="788" alt="image" src="https://github.com/user-attachments/assets/9ae39e9b-19f0-4b66-bd1b-fa85bbfa4dc0" />
 
-<img width="1179" height="726" alt="image" src="https://github.com/user-attachments/assets/7c23b07c-2cd2-4366-afc0-07dabc21bd82" />
+<img width="1559" height="895" alt="image" src="https://github.com/user-attachments/assets/b1c09256-4c19-4054-b1a8-5aba60654c7d" />
 
-Pada awal class main terdapat import kelas dari package lain lalu ArrayList untuk list game, dan Scanner buat input dari user.
+Pada awal class main terdapat import kelas dari package lain lalu ArrayList untuk list game, dan Scanner buat input dari user. Programj ditambahkan menu login sebagai user admin dan customer, karena terdapat penambahan superclass dan subclass. Jika username dan password sesuai dengan data admin, maka user masuk sebagai Admin, jika user menginput username dan password random maka akan login sebnagai customer.
 
+Bagi user yang login sebagai Admin, admin dapat melihat daftar game, mencari game berdasarkan kata kunci, menambahkan game baru, menambahkan item top up pada game tertentu, mengubah nama game, serta menghapus game. User yang login sebagai Customer memiliki menu berbeda. Customer dapat melihat daftar game yang tersedia, melakukan pembelian top up, serta melihat riwayat transaksi yang sudah dilakukan.
+
+
+RUN PROGRAM
+
+<img width="1001" height="396" alt="image" src="https://github.com/user-attachments/assets/728fba87-164c-413f-85a8-8e73201a2ab6" />
+Menu top up game untuk user admin.
+<img width="878" height="336" alt="image" src="https://github.com/user-attachments/assets/d696f3c1-ec3e-4888-a8ef-f1181c43e47e" />
+
+<img width="1169" height="616" alt="image" src="https://github.com/user-attachments/assets/8a431a22-f214-490c-96d5-c53b08403848" />
+
+<img width="1119" height="896" alt="image" src="https://github.com/user-attachments/assets/1d8d9c15-6e91-4c03-8a83-94f6e97e245a" />
+
+<img width="1085" height="671" alt="image" src="https://github.com/user-attachments/assets/7d345116-387d-42e2-8722-2ecc3c376fec" />
+
+<img width="1395" height="692" alt="image" src="https://github.com/user-attachments/assets/0a204c88-4cbb-4a40-baba-e880f4aad5f5" />
 
 
 
