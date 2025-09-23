@@ -1,5 +1,7 @@
-<img width="1102" height="502" alt="image" src="https://github.com/user-attachments/assets/5e115815-5aa6-4e40-aa01-b48a0cbeabc3" /><img width="1144" height="602" alt="image" src="https://github.com/user-attachments/assets/440593ec-3758-4008-96d9-0ad4d2af6694" />Nama: Rizky wahyu dina putri
+Nama: Rizky wahyu dina putri
 NIM: 2409116111
+
+
 
 <img width="444" height="422" alt="image" src="https://github.com/user-attachments/assets/7c7c2788-350a-4bc7-894f-69cee535579e" />
 
