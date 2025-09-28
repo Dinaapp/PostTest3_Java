@@ -3,7 +3,7 @@ NIM: 2409116111
 
 Program Top Up Game adalah program CRUD yang mengelola daftar game beserta item Top Up. Pengguna dapat melihat daftar Game, mencari, menambahkan game baru, mengubah, dan menghapus data. Program juga dibuat menggunakan MVC dengan pemisahan packages agar lebih terstruktur dan sesuai dengan fungsi.
 
-<img width="444" height="422" alt="image" src="https://github.com/user-attachments/assets/7c7c2788-350a-4bc7-894f-69cee535579e" />
+<img width="442" height="454" alt="image" src="https://github.com/user-attachments/assets/cd8ff955-5e5c-4e1f-81f8-ec3c1a7e155a" />
 
 Terdapat 3 Package pada program top up game, pada package model terdapat penambahan class yaitu user, admin, customer, dan transaksi. Class user adalah class induk atau superclass, admin dan customer adalah class anak atau subclass dari user. Sedangkan transaksi adalah kelas tambahan untuk menu yang dibuat untuk Customer. Jadi pada program top up gam, terdapat dua pov menu program.
 
@@ -33,7 +33,7 @@ Method updateGame digunakan untuk mengubah nama game yang ada di list, dengan me
 
 Method hapusGame digunakan untujk menghapus game berdasarkan id, jika data ditemukan, game akan dihapus dari list beserta item top upnya.
 
-Method cariGame mencari data berdasarkan kata kunci yaitu nama gamenya, pencarian game disetting dengan menggunakan toLowerCase().
+Method cariGame mencari data berdasarkan kata kunci yaitu nama gamenya, pencarian game disetting dengan menggunakan toLowerCase(). Method ini menerapkan overloading karena dua method dengan nama yang sama tetapi memiliki parameter yang berbeda yaitu cariGame(int id) untuk mencari game berdasarkan ID dan cariGame(String keyword) mencari game berdasarkan kata kunci nama game. 
 
 Method tampilkanDaftarGame digunakan untuk menampilkan seluruuh data game beserta item top up. Jika list game kosong, maka menampilkan belum ada game tersedia.
 
@@ -53,17 +53,20 @@ Method tampilkanDaftarGame digunakan untuk menampilkan seluruuh data game besert
 
 <img width="1102" height="502" alt="image" src="https://github.com/user-attachments/assets/2b2773f3-236d-4006-a964-3d3492d66b27" />
 
-Di sini ada tiga class utama, User, Admin, dan Customer. Pertama, class User dijadikan abstract karena sifatnya umum dan nantinya bakal diturunkan ke Admin dan Customer. Class ini punya atribut username, password, dan service (objek dari GameService). Di dalamnya ada constructor buat inisialisasi data, lalu ada getter untuk ambil username dan service. Karena abstract, dia juga punya method abstract tampilkanMenu() yang wajib menggunakan override di class anak.
+Di sini ada tiga class utama, User, Admin, dan Customer. Pertama, class User dijadikan abstract karena sifatnya umum dan nantinya bakal diturunkan ke Admin dan Customer. Class ini punya atribut username, password, dan service (objek dari GameService). Di dalamnya ada constructor buat inisialisasi data, lalu ada getter untuk ambil username dan service. Karena abstract, dia juga punya method abstract tampilkanMenu() yang wajib menggunakan override di class anak. Sehingga Class ini telah menerapkan overriding.
 
 Class Admin adalah turunan dari User. Di constructor-nya, class ini memanggil constructor induk pake super. Lalu tampilkanMenu() di override untuk diubah dengan menambahkan pilihan menu khusus admin, seperti lihat daftar game, cari game, tambah game baru, ubah nama game, hapus game, dan keluar.
 
 Class Customer juga turunan dari user atau subclass nya, menu customer lebih simpel, yaitu lihat daftar game, beli top up, lihat riwayat transaksi, dan keluar. Salah satu pilihan menu di customer adalah bisa membeli/top up item game, saat program dijalankan akan menampilkan menu dan menampilkan daftar game di menu tertentu. saat customer membeli mereka diminta untuk masukin ID game, dicek apakah valid atau tidak. Jika valid maka ditampilkan pilihan item top up yang tersedia. Setelah item dipilih, ada konfirmasi pembelian, lalu customer juga diminta masukin ID akun (dengan validasi harus angka). Setelah itu user disuruh pilih metode pembayaran (kredit, virtual bank, transfer, atau e-wallet). Kalau semua valid, data pembelian disimpan sebagai objek Transaksi ke dalam riwayat, lalu ditampilkan struk.
 
 method lihatRiwayat() di class Customer digunakan untuk menampilkan semua transaksi yang udah dilakukan customer. Jika masih kosong, muncul pesan "Belum ada transaksi". Kalau ada, setiap transaksi ditampilkan dengan struknya.
+<img width="1324" height="495" alt="image" src="https://github.com/user-attachments/assets/f99c9ed2-de02-4836-8f38-d1bab986dfa4" />
 
 <img width="1359" height="896" alt="image" src="https://github.com/user-attachments/assets/991f3f80-b217-4903-bd04-947c04d2aaec" />
 
-Class Transaksi digunakan untuk menyimpan dan menampilkan data transaksi top up game. Pada saat objek transaksi dibuat, atribut game, item, ID akun, dan metode pembayaran akan diisi sesuai data yang dimasukkan, sedangkan atribut waktu akan otomatis mengambil data waktu saat transaksi berlangsung dengan real time. class ini terdapat method tampilkanStruk() yang berfungsi untuk menampilkan struk transaksi.
+CetakStruk menggunakan interface yang menjadikan CetakStruk ini adalah sebuah blueprint yang hanya berisi deklarasi method tanpa implementasi. Pada interface CetakStruk terdapat satu method abstrak void tampilkanStruk() yang artinya setiap class yang mengimplementasikan interface ini wajib menyediakan implementasi dari method tersebut.
+
+Class Transaksi digunakan untuk menyimpan dan menampilkan data transaksi top up game. Pada saat objek transaksi dibuat, atribut game, item, ID akun, dan metode pembayaran akan diisi sesuai data yang dimasukkan, sedangkan atribut waktu akan otomatis mengambil data waktu saat transaksi berlangsung dengan real time. Class Transaksi menggunakan implements CetakStruk yang artinya kelas ini mengadopsi interface CetakStruk sehingga wajib menuliskan method tampilkanStruk. Pada class ini method tersebut digunakan untuk menampilkan struk saat transaksi berhasil oleh customer.
 
 <img width="1057" height="617" alt="image" src="https://github.com/user-attachments/assets/63058ed6-661e-4e7f-8256-8136866641d7" />
 
