@@ -62,7 +62,7 @@ Class Customer juga turunan dari user atau subclass nya, menu customer lebih sim
 method lihatRiwayat() di class Customer digunakan untuk menampilkan semua transaksi yang udah dilakukan customer. Jika masih kosong, muncul pesan "Belum ada transaksi". Kalau ada, setiap transaksi ditampilkan dengan struknya.
 <img width="1324" height="495" alt="image" src="https://github.com/user-attachments/assets/f99c9ed2-de02-4836-8f38-d1bab986dfa4" />
 
-<img width="1359" height="896" alt="image" src="https://github.com/user-attachments/assets/991f3f80-b217-4903-bd04-947c04d2aaec" />
+<img width="1623" height="994" alt="image" src="https://github.com/user-attachments/assets/69e828cb-b84e-4e80-9cd3-67203ab4d508" />
 
 CetakStruk menggunakan interface yang menjadikan CetakStruk ini adalah sebuah blueprint yang hanya berisi deklarasi method tanpa implementasi. Pada interface CetakStruk terdapat satu method abstrak void tampilkanStruk() yang artinya setiap class yang mengimplementasikan interface ini wajib menyediakan implementasi dari method tersebut.
 
